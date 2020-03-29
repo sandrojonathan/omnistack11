@@ -1,24 +1,12 @@
-import React, { useState } from 'react';
-import Header from './Header';
+import React  from 'react';
+
+import './global.css';
+
+import Routes from './routes'
 
 function App() {
-
-  let  [counter,setCounter] = useState(0);
-  // use state return array 
-  //Array [valor variavel, funcao de atualizacao]
-  // get, set
-  
-  function increment(){
-    setCounter(counter+1);
-  
-  }
-
-
   return (
-    <div>
-      <Header>Contador: {counter} </Header>
-      <button onClick={increment}>Adicionar</button>
-    </div>
+    <Routes />
   );
 
 }
